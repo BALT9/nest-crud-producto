@@ -1,0 +1,16 @@
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/producto
+
+###
+POST http://localhost:3000/producto
+
+###
+GET http://localhost:3000/producto/1
+
+###
+PUT http://localhost:3000/producto/1
+
+###
+DELETE http://localhost:3000/producto/1

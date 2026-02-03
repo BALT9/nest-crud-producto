@@ -1,12 +1,18 @@
 import { Controller, Delete, Get, Post, Put } from "@nestjs/common";
 
+import { productoService } from "./producto.service";
+
 @Controller("/producto")
 
 export class ProductoController{
 
+    constructor(private productoService: productoService){
+
+    }
+
     @Get()
     funListar(){
-        return "listando productos...";
+        return this.productoService.getProducto()
     }
 
     @Post()

@@ -15,10 +15,18 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/producto/1
+GET http://localhost:3000/producto/2
 
 ###
-PUT http://localhost:3000/producto/1
+PATCH http://localhost:3000/producto/3
+Content-Type: application/json
+
+{
+    "nombre": "celular",
+    "precio": 1300,
+    "cantidad": 5,
+    "imagen": "no hay"
+}
 
 ###
-DELETE http://localhost:3000/producto/1
+DELETE http://localhost:3000/producto/2

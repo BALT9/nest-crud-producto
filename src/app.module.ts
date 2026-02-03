@@ -5,6 +5,7 @@ import { ProductoModule } from './producto/producto.module';
 import { UsuarioModule } from './usuario/usuario.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { producto } from './producto/entity/producto.entity';
+import { CategoriaModule } from './categoria/categoria.module';
 
 @Module({
   imports: [ProductoModule, UsuarioModule,
@@ -18,6 +19,7 @@ import { producto } from './producto/entity/producto.entity';
       entities: [producto],
       synchronize: true,
     }),
+    CategoriaModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -5,6 +5,14 @@ GET http://localhost:3000/producto
 
 ###
 POST http://localhost:3000/producto
+Content-Type: application/json
+
+{
+    "nombre": "mesa",
+    "precio": 40,
+    "cantidad": 1,
+    "imagen": "no hay"
+}
 
 ###
 GET http://localhost:3000/producto/1
